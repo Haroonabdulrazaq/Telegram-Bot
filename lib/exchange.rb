@@ -1,6 +1,7 @@
 require 'uri'
 require 'net/http'
 require 'openssl'
+require 'json'
 
 
 class Exchange
@@ -19,7 +20,12 @@ class Exchange
     
 
     response = http.request(request)
-    currency_value = response.body[95..]
+    dictionary = { "one" => "eins", "two" => "zwei", "three" => "drei" }
+    currency_value = JSON.parse(response.body)
+
+    currency_value["currency_rates"].each do |currency_ratings |
+        puts "#{currency_ratings} to USD\n\n"
+    end
 
     end
 
