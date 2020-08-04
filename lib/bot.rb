@@ -22,8 +22,6 @@ class ExchangeBot
             when '/exchangebot'
                 exchanger = Exchange.new
             bot.api.send_message(chat_id: message.chat.id, text: "The exchange rate for all currency is, #{exchanger.format_response}")
-            # when '/calculation'
-            # bot.api.send_message(chat_id: message.chat.id, text: "I did this calculation, #{exchanger.get_request.formula}")
             when '/stop'
             bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
             else
@@ -32,9 +30,13 @@ class ExchangeBot
                 if users_query.include?('/')
                     valid_input = users_query.split('/')
                     currency_rate = exchanger.get_request["currency_rates"]
-                    usd_rate = currency_rate[valid_input[0].upcase]
-                    eur_rate = currency_rate[valid_input[1].upcase]
-                    bot.api.send_message(chat_id: message.chat.id, text: "#{valid_input[0]} to #{valid_input[1]} rate is, #{usd_rate}/#{eur_rate}")
+                    usd_rate = currency_rate[valid_input[0].upcase].to_f
+                    eur_rate = currency_rate[valid_input[1].upcase].to_f 
+                    if usd_rate != 0 && eur_rate != 0
+                        calculation = usd_rate / eur_rate
+                    end
+                    bot.api.send_message(chat_id: message.chat.id, text: "#{valid_input[0]} to #{valid_input[1]} rate is, #{usd_rate} / #{eur_rate}")
+                    bot.api.send_message(chat_id: message.chat.id, text: "#{valid_input[0]} to #{valid_input[1]} rate calculation is, #{calculation} ")
                 end
             end    
         end
@@ -42,4 +44,4 @@ class ExchangeBot
 end
 
 ex = ExchangeBot.new
-  ex.botCommands
+ex.botCommands
