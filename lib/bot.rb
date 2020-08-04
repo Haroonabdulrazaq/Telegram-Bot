@@ -18,14 +18,28 @@ class ExchangeBot
         bot.listen do |message|
             case message.text
             when '/start'
-            bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")
+            bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")               
             when '/exchangebot'
                 exchanger = Exchange.new
-            bot.api.send_message(chat_id: message.chat.id, text: "The exchange rate for all currency is, #{exchanger.format_repsonse}")
+            bot.api.send_message(chat_id: message.chat.id, text: "The exchange rate for all currency is, #{exchanger.format_response}")
+            # when '/calculation'
+            # bot.api.send_message(chat_id: message.chat.id, text: "I did this calculation, #{exchanger.get_request.formula}")
             when '/stop'
             bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
+            else
+              exchanger = Exchange.new
+              users_query = message.text 
+                if users_query.include?('/')
+                    valid_input = users_query.split('/')
+                    currency_rate = exchanger.get_request["currency_rates"]
+                    usd_rate = currency_rate[valid_input[0].upcase]
+                    eur_rate = currency_rate[valid_input[1].upcase]
+                    bot.api.send_message(chat_id: message.chat.id, text: "#{valid_input[0]} to #{valid_input[1]} rate is, #{usd_rate}/#{eur_rate}")
+                end
             end    
         end
     end
 end
 
+ex = ExchangeBot.new
+  ex.botCommands
