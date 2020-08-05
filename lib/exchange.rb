@@ -23,19 +23,9 @@ class Exchange
         response = http.request(request)
           currency_value = JSON.parse(response.body)
     end
-
-    def format_response
-        bot_response = []
-        currencies = get_request
-            currencies["currency_rates"].each_with_index do |currency_ratings,i|
-             break if i==20
-              bot_response <<  "#{currency_ratings[0]} | #{currency_ratings[1]}\n\n"
-            end
-                return bot_response
-    end
 end
 
 #   ex = Exchange.new
-# puts ex.get_request
-# ex.format_response
+# ex.get_request
+# puts ex.format_response
  
