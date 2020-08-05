@@ -19,12 +19,19 @@ class ExchangeBot
 
     def botCommands(bot)
         exchanger = Exchange.new
+        explore_arr= []
         bot.listen do |message|
             case message.text
             when '/start'
                 bot.api.send_message(chat_id: message.chat.id, text: "Hi there #{message.from.first_name}," << Message::WELCOME_MESSAGE)       
             when '/commands'
                 bot.api.send_message(chat_id: message.chat.id, text: Message::VALID_COMMANDS)
+            when '/explore'
+                whole_obj = exchanger.get_request["currency_rates"]
+                 whole_obj.each do |key, value|
+                     explore_arr << [key,value]
+                 end
+                bot.api.send_message(chat_id: message.chat.id, text: "#{explore_arr}")
             when '/formula'
                 formula = exchanger.get_request["formula"]
                 bot.api.send_message(chat_id: message.chat.id, text: Message::FORMULA1<<" #{formula}"<< Message::FORMULA2 )
