@@ -5,11 +5,14 @@
 ## Content
 <a href="#About">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a text-align="center" href="#Screenshot">Screenshot</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#rules">Rules</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#Screenshot">Screenshot</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#setup">Set-up</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#demo">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#author">Author</a>
+<a href="#Installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#Dependencies">Dependencies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#Testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#Author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#licence"></a>
 
 ## About <a name = "About"></a>
 Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall other currency in comaprison to USD. It shows the rate of exchange for each currency. It is a friendly bot and easy to interact with. It includes some helpful commands to help uses interact or communicate with the bot.
@@ -27,6 +30,7 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
             <code>cd Telegram-Bot</code>
 - Run the project
             <code>bin/main.rb</code>
+
 ## Installation <a name = "Installation"></a>
 - Install all necessary gem, run 
             <code>$ bundle</code>
