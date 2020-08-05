@@ -5,7 +5,6 @@ require 'dotenv'
   Dotenv.load
 
 class ExchangeBot  
-
     def initialize
         @token = ENV['BOT_TOKEN']
         init_bot
@@ -21,7 +20,7 @@ class ExchangeBot
         exchanger = Exchange.new
         explore_arr= []
         bot.listen do |message|
-            case message.text
+        case message.text
             when '/start'
                 bot.api.send_message(chat_id: message.chat.id, text: "Hi there #{message.from.first_name}," << Message::WELCOME_MESSAGE)       
             when '/commands'
