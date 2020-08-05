@@ -5,7 +5,7 @@ I can help you with the most updated information on currency exchange, Like.
 2. Value of currency in comparison to dollar
 3. Give you formula involve in calculating the exchange
 4. Provide a list of all available currency
-Input this /commands to see valid commmands
+Input this /commands to see valid commmands to interact with me
 '.freeze
 
 BYE_MESSAGE = '

@@ -11,7 +11,7 @@ class ExchangeBot
         init_bot
     end
     
-    def init_bot
+ private def init_bot
         Telegram::Bot::Client.run(@token) do |bot|
             botCommands(bot)
         end
@@ -28,8 +28,10 @@ class ExchangeBot
                 bot.api.send_message(chat_id: message.chat.id, text: Message::VALID_COMMANDS)
             when '/explore'
                 whole_obj = exchanger.get_request["currency_rates"]
-                 whole_obj.each do |key, value|
-                     explore_arr << [key,value]
+                 whole_obj.each do |key,i|
+                    break if i == 30
+                     explore_arr << " #{key} "
+                     i +=1
                  end
                 bot.api.send_message(chat_id: message.chat.id, text: "#{explore_arr}")
             when '/formula'
