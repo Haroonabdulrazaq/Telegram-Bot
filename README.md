@@ -1,6 +1,6 @@
 # Telegram-Bot
   
-![GitHub](https://img.shields.io/github/license/Haroonabdulrazaq/Telegram-Bot?logo=Github&style=for-the-badge)![GitHub followers](https://img.shields.io/github/followers/Haroonabdulrazaq?style=for-the-badge)![GitHub last commit](https://img.shields.io/github/last-commit/Haroonabdulrazaq/Telegram-Bot?color=%23e0f&logo=Github&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/Haroonabdulrazaq/Telegram-Bot?logo=Github&style=for-the-badge)![GitHub followers](https://img.shields.io/github/followers/Haroonabdulrazaq?logo=Github&style=for-the-badge)![GitHub last commit](https://img.shields.io/github/last-commit/Haroonabdulrazaq/Telegram-Bot?color=%23e0f&logo=Github&style=for-the-badge)
 
 ## Content
 <a href="#About">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -61,7 +61,7 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check the fork this repo and create pull request if you want to make changes.
 
-## ✒️ MIT Licence <a name = "licence"></a>  :registered:
+## MIT Licence <a name = "licence"></a>  :registered:
 
 MIT License
 
