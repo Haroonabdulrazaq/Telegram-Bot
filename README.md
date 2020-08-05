@@ -28,9 +28,20 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 - Run the project
             <code>bin/main.rb</code>
 ## Installation <a name = "Installation"></a>
+- Install all necessary gem, run 
+            <code>$ bundle</code>
+- Install Rspec (If not installed)
+            <code>gem install Rspec</code>
+- Change working directory into the project
+            <code>rspec --init</code>
 
 ## Dependencies <a name = "Dependencies"></a>
+- Token
+- Json
+- dotenv
 
+## Testing <a name = "Testing"></a>
+Tested with - Rspec
 ## ✒️ Authors <a name = "author"></a>
 
 👤 **Haroon Abdulrazaq**
