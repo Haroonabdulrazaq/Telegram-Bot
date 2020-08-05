@@ -25,7 +25,4 @@ class Exchange
     end
 end
 
-#   ex = Exchange.new
-# ex.get_request
-# puts ex.format_response
  
