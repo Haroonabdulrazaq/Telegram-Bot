@@ -21,7 +21,12 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 ## Screenshot <a name = "Screenshot"></a>
 
 ## 🔨 Setup    <a name = "setup"></a>
-
+- Clone the project from github using
+         <code> git clone https://github.com/Haroonabdulrazaq/Telegram-Bot.git</code>
+- Change working directory into the project
+            <code>cd Telegram-Bot</code>
+- Run the project
+            <code>bin/main.rb</code>
 ## Installation <a name = "Installation"></a>
 
 ## Dependencies <a name = "Dependencies"></a>
