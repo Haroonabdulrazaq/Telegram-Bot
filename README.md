@@ -1,17 +1,17 @@
 # Telegram-Bot
   
-![GitHub](https://img.shields.io/github/license/Haroonabdulrazaq/Telegram-Bot?logo=Github&style=for-the-badge)![GitHub followers](https://img.shields.io/github/followers/Haroonabdulrazaq?logo=Github&style=for-the-badge)![GitHub last commit](https://img.shields.io/github/last-commit/Haroonabdulrazaq/Telegram-Bot?color=%23e0f&logo=Github&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/Haroonabdulrazaq/Telegram-Bot?logo=Github&style=for-the-badge)   ![GitHub followers](https://img.shields.io/github/followers/Haroonabdulrazaq?logo=Github&style=for-the-badge)   ![GitHub last commit](https://img.shields.io/github/last-commit/Haroonabdulrazaq/Telegram-Bot?color=%23e0f&logo=Github&style=for-the-badge)
 
 ## Content
 <a href="#About">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a text-align="center" href="#Screenshot">Screenshot</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#Screenshot">Screenshot</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#setup">Set-up</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#Installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#Dependencies">Dependencies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#Testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#Author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#Screenshot">Screenshot</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#setup">Set-up</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="#Installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="#Dependencies">Dependencies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="#Testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  
+<a href="#Author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
 <a href="#licence"></a>
 
 ## About <a name = "About"></a>
