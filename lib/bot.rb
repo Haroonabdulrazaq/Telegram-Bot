@@ -1,5 +1,6 @@
 require 'telegram/bot'
 require_relative 'exchange.rb'
+require_relative 'message.rb'
 
 class ExchangeBot  
     
@@ -19,15 +20,12 @@ class ExchangeBot
             case message.text
             when '/start'
             bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")               
-            when '/Commands'
+            when '/commands'
+            bot.api.send_message(chat_id: message.chat.id, text: Message::VALID_COMMANDS)
+            when /usd-[a-z]{3}/i
                 exchanger = Exchange.new
-            bot.api.send_message(chat_id: message.chat.id, text: "The exchange rate for all currency is, #{exchanger.format_response}")
-            when '/stop'
-            bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
-            when /[a-z]-[a-z]/
-              exchanger = Exchange.new
-              users_query = message.text 
-              calculation =0
+                users_query = message.text 
+                calculation =0
                 if users_query.include?('-')
                     valid_input = users_query.split('-')
                     currency_rate = exchanger.get_request["currency_rates"]
@@ -39,10 +37,12 @@ class ExchangeBot
                     end
                     bot.api.send_message(chat_id: message.chat.id, text: "#{valid_input[1]} to #{valid_input[0]} rate is, #{usd_rate} - #{eur_rate}") 
                 end
-            end    
+            when '/stop'
+            bot.api.send_message(chat_id: message.chat.id, text: Message::BYE_MESSAGE << " #{message.from.first_name}") 
+            else
+                bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
+            end
         end
     end
 end
-
-ex = ExchangeBot.new
-ex.botCommands
+ 
