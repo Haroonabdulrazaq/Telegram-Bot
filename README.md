@@ -42,6 +42,7 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 
 ## Testing <a name = "Testing"></a>
 Tested with - Rspec
+
 ## ✒️ Authors <a name = "author"></a>
 
 👤 **Haroon Abdulrazaq**
@@ -62,5 +63,6 @@ Feel free to check the fork this repo and create pull request if you want to mak
 Give a ⭐️ if you like this project!
 
 ## :thumbsup: Acknowledgements
-
+- Microverse for providiing the zeal and motivation to build this project 
+- ThOdinProject for specification used in building this project
  
