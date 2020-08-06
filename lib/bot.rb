@@ -18,12 +18,13 @@ class ExchangeBot
     end
   end
   # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:disable Metrics/AbcSize
+  # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
+
   def bot_commands(bot)
 
     exchanger = Exchange.new
     explore_arr = []
-  # rubocop:disable Metrics/BlockLength
+    # rubocop:disable Metrics/BlockLength
     bot.listen do |message|
       case message.text
       when '/start'
@@ -41,7 +42,7 @@ class ExchangeBot
         bot.api.send_message(chat_id: message.chat.id, text: explore_arr.to_s)
       when '/formula'
         formula = exchanger.make_request['formula']
-        bot.api.send_message(chat_id: message.chat.id, text: "#{formula}" << Message::FORMULA1 << Message::FORMULA2)
+        bot.api.send_message(chat_id: message.chat.id, text: formula.to_s << Message::FORMULA1 << Message::FORMULA2)
       when /usd-([a-z]{3})/i
         users_query = message.text
         if users_query.include?('-')
@@ -68,5 +69,5 @@ class ExchangeBot
     # rubocop:enable Metrics/BlockLength
   end
   # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:enable  Metrics/AbcSize
+  # rubocop:enable  Metrics/AbcSize,Metrics/MethodLength
 end
