@@ -25,11 +25,23 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 
 ## 🔨 Setup    <a name = "setup"></a>
 - Clone the project from github using
-         <code> git clone https://github.com/Haroonabdulrazaq/Telegram-Bot.git</code>
+- <code> git clone https://github.com/Haroonabdulrazaq/Telegram-Bot.git</code>
 - Change working directory into the project
-            <code>cd Telegram-Bot</code>
+- <code>cd Telegram-Bot</code>
 - Run the project
-            <code>bin/main.rb</code>
+- <code>bin/main.rb</code>
+- Creat a telegram account if you dont have one
+- Search @Haroons_bot with the name [currencyExchanger_bot]
+- Click Start
+
+## 🔨 Features    <a name = "setup"></a>
+1. Input : /start    => This command starts the bot
+2. Input : /commands    =>Provide list of all valid commands
+3. Input : /explore =>Provide list of all available currency---Note It\'s a  lot of data
+4. Input : usd-eur(example)     =>  response: with the usd/eur exchange rate, you can use any currency of your choice
+5. Input : /formula  =>  returns : The calculation involve in the exchange rate
+6. Input : /stop   =>  responds : with a Good bye message to user
+
 
 ## Installation <a name = "Installation"></a>
 - Install all necessary gem, run 
