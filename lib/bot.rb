@@ -17,13 +17,10 @@ class ExchangeBot
       bot_commands(bot)
     end
   end
-  # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
 
   def bot_commands(bot)
     exchanger = Exchange.new
     explore_arr = []
-    # rubocop:disable Metrics/BlockLength
     bot.listen do |message|
       case message.text
       when '/start'
@@ -43,34 +40,30 @@ class ExchangeBot
         formula = exchanger.make_request['formula']
         bot.api.send_message(chat_id: message.chat.id, text: formula.to_s << Message::FORMULA1 << Message::FORMULA2)
       when /usd-([a-z]{3})/i
-        calculation(message.text, bot,message)
+        calculation(message.text, bot, message)
       when '/stop'
         bot.api.send_message(chat_id: message.chat.id, text: Message::BYE_MESSAGE)
       else
         bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
       end
     end
-    # rubocop:enable Metrics/BlockLength
-  end
-  # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:enable  Metrics/AbcSize,Metrics/MethodLength
-  def calculation(users_query,bot,message)
-    exchanger = Exchange.new
-    if users_query.include?('-')
-      valid_input = users_query.split('-')
-      currency_rate = exchanger.make_request['currency_rates']
-      usd_rate = currency_rate[valid_input[0].upcase].to_f
-      eur_rate = currency_rate[valid_input[1].upcase].to_f
-      unless usd_rate == 0 && eur_rate == 0
-        calculation = usd_rate / eur_rate
-        bot.api.send_message(chat_id: message.chat.id,
-                             text: "1 #{valid_input[0]} equals #{calculation} #{valid_input[1]}")
-        bot.api.send_message(chat_id: message.chat.id,
-                             text: "#{valid_input[0]} to #{valid_input[1]} rate is, #{usd_rate} - #{eur_rate}")
-      else  
-        bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
-      end
-    end
   end
 
+  def calculation(users_query, bot, message)
+    exchanger = Exchange.new
+      (return unless users_query.include?('-'))
+        valid_input = users_query.split('-')
+        currency_rate = exchanger.make_request['currency_rates']
+        usd_rate = currency_rate[valid_input[0].upcase].to_f
+        eur_rate = currency_rate[valid_input[1].upcase].to_f
+        if usd_rate.zero? && eur_rate.zero?
+          bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
+        else
+          calculation = usd_rate / eur_rate
+          bot.api.send_message(chat_id: message.chat.id,
+                              text: "1 #{valid_input[0]} equals #{calculation} #{valid_input[1]}")
+          bot.api.send_message(chat_id: message.chat.id,
+                              text: "#{valid_input[0]} to #{valid_input[1]} rate is, #{usd_rate} - #{eur_rate}")
+        end
+  end
 end
