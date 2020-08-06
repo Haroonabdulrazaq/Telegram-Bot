@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Message
   WELCOME_MESSAGE = ' I am your Friendly Bot exchanger.
 I can help you with the most updated information on currency exchange, Like.

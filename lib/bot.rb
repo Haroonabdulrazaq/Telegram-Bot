@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'telegram/bot'
 require_relative 'exchange.rb'
 require_relative '../helper/message.rb'
@@ -20,8 +18,8 @@ class ExchangeBot
     end
   end
 
-  def explorer(explore_arr = [], bot, message)
-    # explore_arr = []
+  def explorer( explore_arr,bot, message)
+    explore_arr = []
     exchanger = Exchange.new
     whole_obj = exchanger.make_request['currency_rates']
     whole_obj.each do |key, i|
