@@ -41,7 +41,7 @@ class ExchangeBot
         bot.api.send_message(chat_id: message.chat.id, text: explore_arr.to_s)
       when '/formula'
         formula = exchanger.make_request['formula']
-        bot.api.send_message(chat_id: message.chat.id, text: Message::FORMULA1 << " #{formula}" << Message::FORMULA2)
+        bot.api.send_message(chat_id: message.chat.id, text: "#{formula}" << Message::FORMULA1 << Message::FORMULA2)
       when /usd-([a-z]{3})/i
         users_query = message.text
         if users_query.include?('-')
@@ -60,7 +60,7 @@ class ExchangeBot
           end
         end
       when '/stop'
-        bot.api.send_message(chat_id: message.chat.id, text: Message::BYE_MESSAGE << " #{message.from.first_name}")
+        bot.api.send_message(chat_id: message.chat.id, text: Message::BYE_MESSAGE)
       else
         bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
       end
