@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Message
   WELCOME_MESSAGE = ' I am your Friendly Bot exchanger.
 I can help you with the most updated information on currency exchange, Like.
@@ -5,7 +7,7 @@ I can help you with the most updated information on currency exchange, Like.
 2. Value of currency in comparison to dollar
 3. Give you formula involve in calculating the exchange
 4. Provide a list of all available currency
-Input this /commands to see valid commmands to interact with me
+Input this /commands to see valid commands to interact with me
 '
 
   BYE_MESSAGE = '
@@ -25,8 +27,7 @@ I will reply you with the returns specified next to every message:
 5. Input : /formula  =>  returns : The calculation involve in the exchange rate
 6. Input : /stop   =>  responds : with a Good bye message to user
 '
-  FORMULA1 = 'Formula for rate of exchange is
-     '
+  FORMULA1 = '<= formula for rate of exchange'
   FORMULA2 = '
 Formula for value of currency is
      usd_rate/currency_rate'
