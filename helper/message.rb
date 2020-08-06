@@ -24,7 +24,7 @@ I will reply you with the returns specified next to every message:
 4. Input : usd-eur(example)     =>  response: with the usd/eur exchange rate, you can use any currency of your choice
 5. Input : /formula  =>  returns : The calculation involve in the exchange rate
 6. Input : /stop   =>  responds : with a Good bye message to user
-'
+'.freeze
   FORMULA1 = 'Formula for rate of exchange is
      '
   FORMULA2 = '
