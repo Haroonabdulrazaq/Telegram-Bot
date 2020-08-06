@@ -18,7 +18,7 @@ class ExchangeBot
     end
   end
 
-  def explorer(users_query, bot, message)
+  def explorer(bot, message)
     explore_arr = []
     exchanger = Exchange.new
     whole_obj = exchanger.make_request['currency_rates']
@@ -41,7 +41,7 @@ class ExchangeBot
       when '/commands'
         bot.api.send_message(chat_id: message.chat.id, text: Message::VALID_COMMANDS)
       when '/explore'
-        explorer(message.text, bot, message)
+        explorer(bot, message)
       when '/formula'
         formula = exchanger.make_request['formula']
         bot.api.send_message(chat_id: message.chat.id, text: formula.to_s << Message::FORMULA1 << Message::FORMULA2)
