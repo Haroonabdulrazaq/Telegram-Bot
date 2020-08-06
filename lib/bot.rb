@@ -21,7 +21,6 @@ class ExchangeBot
   # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
 
   def bot_commands(bot)
-
     exchanger = Exchange.new
     explore_arr = []
     # rubocop:disable Metrics/BlockLength
