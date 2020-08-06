@@ -19,7 +19,8 @@ class ExchangeBot
       bot_commands(bot)
     end
   end
-
+  # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/MethodLength
   def bot_commands(bot)
     exchanger = Exchange.new
     explore_arr = []
@@ -65,4 +66,7 @@ class ExchangeBot
       end
     end
   end
+    # rubocop:enable Metrics/ModuleLength
+  # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
+  # rubocop:enable Metrics/MethodLength
 end
