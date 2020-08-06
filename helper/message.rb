@@ -15,7 +15,7 @@ Twitter: @Hanq_o
 LinkedIn: https://www.linkedin.com/in/haroon-abdulrazaq-817906100/
 Thanks for interacting with me, hope to see you soon!'
   WARNING_MESSAGE = 'Oopps!!, It seems you have entered an invaild command,
-  you should input /commands to see the valid commands for this bot'
+  you should input /commands to see the valid commands for this bot'.freeze
   VALID_COMMANDS = 'Enter any of the following commands and I will reply you as soon as possible
 I will reply you with the returns specified next to every message:
 1. Input : /start    =>  returns : This command starts the bot
@@ -24,10 +24,10 @@ I will reply you with the returns specified next to every message:
 4. Input : usd-eur(example)     =>  response: with the usd/eur exchange rate, you can use any currency of your choice
 5. Input : /formula  =>  returns : The calculation involve in the exchange rate
 6. Input : /stop   =>  responds : with a Good bye message to user
-'
+'.freeze
   FORMULA1 = 'Formula for rate of exchange is
      '
   FORMULA2 = '
 Formula for value of currency is
-     usd_rate/currency_rate'
+     usd_rate/currency_rate'.freeze
 end

@@ -41,7 +41,6 @@ class ExchangeBot
         bot.api.send_message(chat_id: message.chat.id, text: Message::FORMULA1 << " #{formula}" << Message::FORMULA2)
       when /usd-([a-z]{3})/i
         users_query = message.text
-        # calculation = 0
         if users_query.include?('-')
           valid_input = users_query.split('-')
           currency_rate = exchanger.make_request['currency_rates']
