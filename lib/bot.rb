@@ -18,10 +18,12 @@ class ExchangeBot
     end
   end
   # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:disable  Metrics/AbcSize
+  # rubocop:disable Metrics/AbcSize
   def bot_commands(bot)
+
     exchanger = Exchange.new
     explore_arr = []
+  # rubocop:disable Metrics/BlockLength
     bot.listen do |message|
       case message.text
       when '/start'
@@ -63,6 +65,7 @@ class ExchangeBot
         bot.api.send_message(chat_id: message.chat.id, text: Message::WARNING_MESSAGE)
       end
     end
+    # rubocop:enable Metrics/BlockLength
   end
   # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
   # rubocop:enable  Metrics/AbcSize

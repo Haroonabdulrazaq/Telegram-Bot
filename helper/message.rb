@@ -15,7 +15,7 @@ Twitter: @Hanq_o
 LinkedIn: https://www.linkedin.com/in/haroon-abdulrazaq-817906100/
 Thanks for interacting with me, hope to see you soon!'
   WARNING_MESSAGE = 'Oopps!!, It seems you have entered an invaild command,
-  you should input /commands to see the valid commands for this bot'
+  you should input /commands to see the valid commands for this bot'.freeze
   VALID_COMMANDS = 'Enter any of the following commands and I will reply you as soon as possible
 I will reply you with the returns specified next to every message:
 1. Input : /start    =>  returns : This command starts the bot
