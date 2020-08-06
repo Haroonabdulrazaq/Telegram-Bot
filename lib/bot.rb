@@ -18,7 +18,7 @@ class ExchangeBot
     end
   end
 
-  def explorer(explore_arr, bot, message)
+  def explorer(users_query, bot, message)
     explore_arr = []
     exchanger = Exchange.new
     whole_obj = exchanger.make_request['currency_rates']
