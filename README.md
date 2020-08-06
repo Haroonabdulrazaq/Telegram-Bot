@@ -40,7 +40,7 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
             <code>rspec --init</code>
 
 ## Dependencies <a name = "Dependencies"></a>
-- Token
+- Token  BOT_TOKEN = '1156943187:AAE_JHdRfLYEWxUw5R30vYgng_-TONyDMtA' (For the sake of Review)👍
 - Json
 - dotenv
 
