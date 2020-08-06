@@ -6,16 +6,16 @@ I can help you with the most updated information on currency exchange, Like.
 3. Give you formula involve in calculating the exchange
 4. Provide a list of all available currency
 Input this /commands to see valid commands to interact with me
-'
+'.freeze
 
   BYE_MESSAGE = '
 I was designed by Haroon Abdulrazaq you can reach him on:
 Gmail: Haroonabdulrazaq@gmail.com
 Twitter: @Hanq_o
 LinkedIn: https://www.linkedin.com/in/haroon-abdulrazaq-817906100/
-Thanks for interacting with me, hope to see you soon!'
+Thanks for interacting with me, hope to see you soon!'.freeze
   WARNING_MESSAGE = 'Oopps!!, It seems you have entered an invaild command,
-  you should input /commands to see the valid commands for this bot'
+  you should input /commands to see the valid commands for this bot'.freeze
   VALID_COMMANDS = 'Enter any of the following commands and I will reply you as soon as possible
 I will reply you with the returns specified next to every message:
 1. Input : /start    =>  returns : This command starts the bot
@@ -24,9 +24,9 @@ I will reply you with the returns specified next to every message:
 4. Input : usd-eur(example)     =>  response: with the usd/eur exchange rate, you can use any currency of your choice
 5. Input : /formula  =>  returns : The calculation involve in the exchange rate
 6. Input : /stop   =>  responds : with a Good bye message to user
-'
-  FORMULA1 = '<= formula for rate of exchange'
+'.freeze
+  FORMULA1 = '<= formula for rate of exchange'.freeze
   FORMULA2 = '
 Formula for value of currency is
-     usd_rate/currency_rate'
+     usd_rate/currency_rate'.freeze
 end

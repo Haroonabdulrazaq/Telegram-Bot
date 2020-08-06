@@ -18,7 +18,7 @@ class ExchangeBot
     end
   end
 
-  def explorer( explore_arr,bot, message)
+  def explorer(explore_arr, bot, message)
     explore_arr = []
     exchanger = Exchange.new
     whole_obj = exchanger.make_request['currency_rates']
@@ -30,6 +30,7 @@ class ExchangeBot
     bot.api.send_message(chat_id: message.chat.id, text: explore_arr.to_s)
   end
 
+  # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
   def bot_commands(bot)
     exchanger = Exchange.new
     bot.listen do |message|
@@ -53,6 +54,7 @@ class ExchangeBot
       end
     end
   end
+  # rubocop:enable Metrics/CyclomaticComplexity, Metrics/MethodLength
 
   def calculation(users_query, bot, message)
     exchanger = Exchange.new
