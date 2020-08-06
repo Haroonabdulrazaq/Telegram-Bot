@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'telegram/bot'
 require_relative 'exchange.rb'
 require_relative '../helper/message.rb'
@@ -20,7 +18,7 @@ class ExchangeBot
     end
   end
   # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:disable Metrics/MethodLength
+  # rubocop:disable  Metrics/AbcSize
   def bot_commands(bot)
     exchanger = Exchange.new
     explore_arr = []
@@ -66,7 +64,6 @@ class ExchangeBot
       end
     end
   end
-    # rubocop:enable Metrics/ModuleLength
   # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-  # rubocop:enable Metrics/MethodLength
+  # rubocop:enable  Metrics/AbcSize
 end
