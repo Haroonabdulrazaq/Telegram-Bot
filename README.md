@@ -55,8 +55,9 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 - Json
 - dotenv
 
-## Tested with <a name = "Testing"></a>
+## Run Test <a name = "Testing"></a>
 - Rspec :heavy_check_mark:
+- $ rspec
 
 ## ✒️ Authors <a name = "author"></a>
 
