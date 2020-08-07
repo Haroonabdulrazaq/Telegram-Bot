@@ -22,7 +22,7 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
 - Ruby
 
 ## Screenshot <a name = "Screenshot"></a>
-
+https://www.loom.com/share/b4368aa05bee407aa81f829125ed3856
 ## 🔨 Setup    <a name = "setup"></a>
 - Clone the project from github using
 - <code> git clone https://github.com/Haroonabdulrazaq/Telegram-Bot.git</code>
@@ -51,7 +51,7 @@ Telegram-Bot Is a friendly currency exchanger bot, built to show the rate ofall 
             <code>rspec --init</code>
 
 ## Dependencies <a name = "Dependencies"></a>
-- Token  BOT_TOKEN = '1156943187:AAE_JHdRfLYEWxUw5R30vYgng_-TONyDMtA' (For the sake of Review)👍
+- Token
 - Json
 - dotenv
 
