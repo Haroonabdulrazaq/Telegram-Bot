@@ -1,4 +1,3 @@
-require_relative '../lib/bot.rb'
 require_relative '../lib/exchange.rb'
 
 describe '#Exchange' do
@@ -8,13 +7,11 @@ describe '#Exchange' do
       expect(exchange.make_request.class).to eql(Hash)
     end
   end
-end
 
-describe '#ExchangeBot' do
-  let(:currency) { ExchangeBot.new }
-  describe '#bot_Commands' do
-    it 'returns the same value as the bot' do
-      expect(currency.bot_commands).to eql(Bot)
+  describe '#make_formula' do
+    it 'should return a formula used in calculating the rate of exchange' do
+      formulae = '(amount * this.rates[from]) / this.rates[to]'
+      expect(exchange.make_formula).to eql(formulae)
     end
   end
 end

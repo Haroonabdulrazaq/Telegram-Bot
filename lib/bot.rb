@@ -28,6 +28,7 @@ class ExchangeBot
       explore_arr << key
     end
     bot.api.send_message(chat_id: message.chat.id, text: explore_arr.to_s)
+    # explore_arr
   end
 
   # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
@@ -43,7 +44,7 @@ class ExchangeBot
       when '/explore'
         explorer(bot, message)
       when '/formula'
-        formula = exchanger.make_request['formula']
+        formula = exchanger.make_formula
         bot.api.send_message(chat_id: message.chat.id, text: formula.to_s << Message::FORMULA1 << Message::FORMULA2)
       when /usd-([a-z]{3})/i
         calculation(message.text, bot, message)

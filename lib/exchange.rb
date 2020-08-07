@@ -24,4 +24,9 @@ class Exchange
     currency_value = JSON.parse(response.body)
     currency_value
   end
+
+  def make_formula
+    formula = make_request['formula']
+    formula
+  end
 end
