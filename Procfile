@@ -1,0 +1,1 @@
+bin: bin/main.rb
