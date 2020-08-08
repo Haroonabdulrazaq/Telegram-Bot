@@ -59,7 +59,7 @@ https://www.loom.com/share/b4368aa05bee407aa81f829125ed3856
 - Rspec :heavy_check_mark:
 - $ rspec
 
-## ✒️ Authors <a name = "author"></a>
+## ✒️ Author <a name = "author"></a>
 
 👤 **Haroon Abdulrazaq**
 
@@ -72,6 +72,7 @@ https://www.loom.com/share/b4368aa05bee407aa81f829125ed3856
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the fork this repo and create pull request if you want to make changes.
+- [API END POINT] (https://rapidapi.com/kasimurugasen1995/api/currency-value/endpoints)
 
 ## MIT Licence <a name = "licence"></a>  :registered:
 
