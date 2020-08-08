@@ -1,1 +1,1 @@
-bin: bin/main.rb
+bot: bin/main.rb
