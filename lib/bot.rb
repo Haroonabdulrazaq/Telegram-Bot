@@ -1,6 +1,6 @@
 require 'telegram/bot'
-require_relative 'exchange.rb'
-require_relative '../helper/message.rb'
+require_relative 'exchange'
+require_relative '../helper/message'
 require 'dotenv'
 Dotenv.load
 # Exchange Bot Class
