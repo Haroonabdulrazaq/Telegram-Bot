@@ -95,6 +95,6 @@ furnished to do so.
 Give a ⭐️ if you like this project!
 
 ## :thumbsup: Acknowledgements
-- Microverse for providiing the zeal and motivation to build this project 
-- ThOdinProject for specification used in building this project
+- Microverse for providing the zeal and motivation to build this project 
+- TheOdinProject for the specification used in building this project
  
