@@ -68,7 +68,7 @@ https://www.loom.com/share/b4368aa05bee407aa81f829125ed3856
 
 - Github: [@Haroonabdulrazaq](https://github.com/Haroonabdulrazaq)
 - Twitter: [@Hanq_o](https://twitter.com/Hanq_o)
-- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroon-abdulrazaq-817906100/)
+- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq)
 
 ## 🤝 Contributing
 
